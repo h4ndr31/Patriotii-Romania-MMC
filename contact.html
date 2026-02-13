@@ -65,7 +65,15 @@
         </div>
     </div>
 </header>
-
+<div class="mobile-menu hidden md:hidden fixed top-20 left-0 w-full bg-[#1a1a1a]/98 backdrop-blur-xl border-b border-primary/20 z-40 shadow-2xl">
+    <div class="flex flex-col p-6 gap-4">
+        <a href="index.html" class="text-lg font-black uppercase tracking-widest text-white border-b border-white/5 pb-2">Acasă</a>
+        <a href="evenimente.html" class="text-lg font-black uppercase tracking-widest text-white border-b border-white/5 pb-2">Evenimente</a>
+        <a href="donatii.html" class="text-lg font-black uppercase tracking-widest text-white border-b border-white/5 pb-2">Donații</a>
+        <a href="contact.html" class="text-lg font-black uppercase tracking-widest text-primary pb-2">Contact</a>
+        <a href="donatii.html" class="bg-primary text-black text-center py-4 rounded font-black uppercase tracking-widest mt-4">Susține-ne</a>
+    </div>
+</div>
 <main class="flex-grow pt-28">
     <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="text-center mb-16">
@@ -208,6 +216,23 @@
         </div>
     </div>
 </footer>
+<script>
+    // Selectăm butonul hamburger și meniul de mobil
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
 
+    // Adăugăm funcția de click
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden"); // Dacă are clasa 'hidden' o scoate, dacă nu o are o pune
+    });
+
+    // Închidem meniul automat dacă se dă click pe un link
+    const links = menu.querySelectorAll("a");
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.add("hidden");
+        });
+    });
+</script>
 </body>
 </html>
