@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="dark" lang="ro">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Patrioții România MMC - Unitas et Honor</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4af35",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#201d12",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: "Work Sans", sans-serif }
+        .hero-gradient {
+            background: linear-gradient(rgba(32, 29, 18, 0.7), rgba(32, 29, 18, 0.9)), url(https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2070&auto=format&fit=crop);
+            background-size: cover;
+            background-position: center;
+        }
+        .grain-overlay::before {
+            content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url(https://www.transparenttextures.com/patterns/asfalt-dark.png);
+            opacity: 0.05; pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white grain-overlay">
+
+<header class="sticky top-0 z-50 w-full bg-[#1a1a1a]/95 backdrop-blur-md border-b border-white/5">
+    <div class="h-[3px] w-full flex">
+        <div class="h-full w-1/3 bg-[#002B7F]"></div>
+        <div class="h-full w-1/3 bg-[#FCD116]"></div>
+        <div class="h-full w-1/3 bg-[#CE1126]"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <img alt="Patrioții România MMC" class="h-12 w-auto" src="https://patrioti-romania-mmc.ro/wp-content/uploads/2025/12/Patrioti-Logo-Site.png"/>
+                <div class="flex flex-col">
+                    <h1 class="text-lg font-black uppercase tracking-tighter leading-none text-white">Patrioții România <span class="text-primary text-[10px] ml-1">MMC</span></h1>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-xs font-bold uppercase tracking-widest text-primary transition-colors" href="index.html">Acasă</a>
+                <a class="text-xs font-bold uppercase tracking-widest text-white/70 hover:text-primary transition-colors" href="evenimente.html">Evenimente</a>
+                <a class="text-xs font-bold uppercase tracking-widest text-white/70 hover:text-primary transition-colors" href="donatii.html">Donații</a>
+                <a class="text-xs font-bold uppercase tracking-widest text-white/70 hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center">
+                <a href="donatii.html" class="bg-primary text-background-dark px-6 py-2 rounded font-black text-xs uppercase tracking-[0.2em] hover:bg-white transition-all">
+                    Susține-ne
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 hero-gradient"></div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div class="flex justify-center gap-1 mb-4">
+            <div class="w-4 h-1 bg-[#002B7F]"></div>
+            <div class="w-4 h-1 bg-[#FCD116]"></div>
+            <div class="w-4 h-1 bg-[#CE1126]"></div>
+        </div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded border border-primary/50 bg-primary/10 text-primary mb-6">
+            <span class="material-symbols-outlined text-sm">military_tech</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Veterani & Militari</span>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black text-white leading-[1.1] mb-6 uppercase tracking-tighter">
+            Unitas et Honor – <span class="text-primary">Veterani</span> pe Două Roți
+        </h1>
+        <p class="text-lg md:text-xl text-white/80 font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
+            Camaraderie, onoare și patriotism. Misiunea noastră continuă pe drumurile țării, purtând valorile care ne-au definit în serviciu.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="contact.html" class="w-full sm:w-auto bg-primary text-background-dark px-10 py-4 rounded-lg font-black text-lg uppercase tracking-widest hover:scale-105 transition-transform text-center">
+                Alătură-te misiunii
+            </a>
+            <a href="evenimente.html" class="w-full sm:w-auto bg-white/5 border border-white/20 backdrop-blur text-white px-10 py-4 rounded-lg font-black text-lg uppercase tracking-widest hover:bg-white/10 transition-all text-center">
+                Vezi acțiunile noastre
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-4 bg-background-light dark:bg-background-dark">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+            <div class="aspect-[4/5] rounded-xl overflow-hidden border-2 border-primary/20 shadow-2xl">
+                <img alt="Patrioții MMC Formation" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2070&auto=format&fit=crop"/>
+            </div>
+            <div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-lg shadow-2xl hidden md:block">
+                <span class="text-background-dark font-black text-4xl block">2012</span>
+                <span class="text-background-dark font-bold text-xs uppercase tracking-widest">Anul Fondării</span>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-primary font-black text-sm uppercase tracking-[0.3em] mb-4">Cine suntem</h2>
+            <h3 class="text-4xl md:text-5xl font-black mb-8 leading-tight dark:text-white uppercase">Suntem o familie unită de aceleași <span class="text-primary/80">valori</span></h3>
+            <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
+                Fondat de veterani și militari, suntem mai mult decât un club de motocicliști. Suntem un ordin modern dedicat celor care au jurat să servească țara și poartă acea disciplină în viața civilă. Legăturile noastre s-au format în teatre de operații și s-au sudat pe mii de kilometri parcurși împreună.
+            </p>
+            <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-primary/10 rounded-lg text-primary border border-primary/20">
+                        <span class="material-symbols-outlined">groups</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold dark:text-white mb-1">Camaraderie</h4>
+                        <p class="text-slate-500">Legături de neclintit formate în serviciu și întărite pe drum, unde nimeni nu este lăsat în urmă.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-primary/10 rounded-lg text-primary border border-primary/20">
+                        <span class="material-symbols-outlined">workspace_premium</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold dark:text-white mb-1">Onoare</h4>
+                        <p class="text-slate-500">Respectăm codul disciplinei militare în tot ceea ce facem, reprezentând cu mândrie culorile țării.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-primary/10 rounded-lg text-primary border border-primary/20">
+                        <span class="material-symbols-outlined">flag</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold dark:text-white mb-1">Patriotism</h4>
+                        <p class="text-slate-500">Acționăm ca o forță de sprijin pentru comunitate și pentru eroii noștri care au nevoie de ajutor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-primary/5 border-y border-primary/10">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-center text-white text-3xl font-black uppercase tracking-widest mb-16">Impact Social Real</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-background-dark border border-primary/20 p-10 rounded-xl text-center relative overflow-hidden group">
+                <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Evenimente Caritabile</p>
+                <p class="text-white text-6xl font-black mb-4">150+</p>
+                <div class="flex items-center justify-center gap-2 text-green-500 font-bold">
+                    <span class="material-symbols-outlined text-sm">trending_up</span>
+                    <span>+15% Anual</span>
+                </div>
+            </div>
+            <div class="bg-background-dark border border-primary/20 p-10 rounded-xl text-center relative overflow-hidden group">
+                <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Familii Susținute</p>
+                <p class="text-white text-6xl font-black mb-4">400+</p>
+                <div class="flex items-center justify-center gap-2 text-green-500 font-bold">
+                    <span class="material-symbols-outlined text-sm">trending_up</span>
+                    <span>+20% Impact</span>
+                </div>
+            </div>
+            <div class="bg-background-dark border border-primary/20 p-10 rounded-xl text-center relative overflow-hidden group">
+                <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Kilometri Parcurși</p>
+                <p class="text-white text-6xl font-black mb-4">85K+</p>
+                <div class="flex items-center justify-center gap-2 text-green-500 font-bold">
+                    <span class="material-symbols-outlined text-sm">trending_up</span>
+                    <span>+12% Distanță</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <h2 class="text-primary font-black text-sm uppercase tracking-[0.3em] mb-4">Misiunile noastre</h2>
+                <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tighter dark:text-white">Ultimele Acțiuni <br/>Umanitare</h3>
+            </div>
+            <a href="evenimente.html" class="text-primary font-bold uppercase tracking-widest flex items-center gap-2 border-b-2 border-primary/50 hover:border-primary transition-all pb-1">
+                Vezi arhiva misiunilor
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group relative overflow-hidden rounded-xl bg-background-dark border border-white/5">
+                <div class="aspect-video relative overflow-hidden">
+                    <img alt="Crăciun Veterani" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:scale-110 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1469033011393-01865a78120e?q=80&w=2070&auto=format&fit=crop"/>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-primary text-background-dark px-3 py-1 text-[10px] font-black uppercase rounded">Decembrie 2023</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-black text-white mb-3 uppercase tracking-tight">Misiunea Crăciunul Veteranilor</h4>
+                    <p class="text-slate-400 text-sm mb-4">Pachete cu alimente și sprijin moral pentru peste 50 de veterani singuri.</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl bg-background-dark border border-white/5">
+                <div class="aspect-video relative overflow-hidden">
+                    <img alt="Marșul Eroilor" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:scale-110 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2070&auto=format&fit=crop"/>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-primary text-background-dark px-3 py-1 text-[10px] font-black uppercase rounded">Iulie 2023</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-black text-white mb-3 uppercase tracking-tight">Marșul Eroilor Noștri</h4>
+                    <p class="text-slate-400 text-sm mb-4">Convoi solemn de onorare a memoriei militarilor căzuți în teatrele de operații.</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl bg-background-dark border border-white/5">
+                <div class="aspect-video relative overflow-hidden">
+                    <img alt="Ghiozdane" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:scale-110 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=2070&auto=format&fit=crop"/>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-primary text-background-dark px-3 py-1 text-[10px] font-black uppercase rounded">Septembrie 2023</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-black text-white mb-3 uppercase tracking-tight">Ghiozdane pentru Viitor</h4>
+                    <p class="text-slate-400 text-sm mb-4">Campanie de strângere de fonduri și rechizite pentru copiii militarilor răniți.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-4 bg-background-dark relative overflow-hidden text-center">
+    <div class="max-w-4xl mx-auto relative z-10">
+        <span class="material-symbols-outlined text-primary text-6xl mb-6">handshake</span>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-8">Ești veteran sau militar activ? <br/><span class="text-primary">Te vrem în rândurile noastre.</span></h2>
+        <p class="text-xl text-slate-400 mb-12">Dacă împărtășești pasiunea pentru două roți și respectul pentru valorile naționale, te invităm să ni te alături.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a href="contact.html" class="w-full sm:w-auto bg-primary text-background-dark px-12 py-5 rounded-lg font-black text-xl uppercase tracking-widest hover:bg-white transition-all text-center">
+                Trimite Solicitare
+            </a>
+            <a class="text-white font-bold hover:text-primary transition-colors flex items-center gap-2 uppercase tracking-widest" href="mailto:contact@patriotiromania.ro">
+                <span class="material-symbols-outlined">mail</span> Contactează Secretariatul
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-black border-t border-white/5 pt-16 pb-8 px-6 lg:px-20 text-white/60">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div class="flex flex-col gap-6">
+            <div class="flex items-center gap-3">
+                <img alt="Logo" class="h-6 w-auto" src="https://patrioti-romania-mmc.ro/wp-content/uploads/2025/12/Patrioti-Logo-Site.png"/>
+                <h2 class="text-white text-base font-black uppercase italic leading-none">Patrioții România</h2>
+            </div>
+            <p class="text-xs leading-relaxed">Prima asociație de motocicliști militari din România.</p>
+        </div>
+        <div>
+            <h3 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Navigație</h3>
+            <div class="flex flex-col gap-3 text-[11px] font-medium uppercase">
+                <a class="hover:text-primary transition-colors" href="index.html">Acasă</a>
+                <a class="hover:text-primary transition-colors" href="evenimente.html">Evenimente</a>
+                <a class="hover:text-primary transition-colors" href="donatii.html">Donații</a>
+                <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Contact</h3>
+            <div class="flex flex-col gap-3 text-[11px] font-medium">
+                <div class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">mail</span><span>contact@patriotromaniammc.ro</span></div>
+                <div class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">location_on</span><span>Brasov, România</span></div>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Social Media</h3>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-primary transition-colors"><span class="material-symbols-outlined">public</span></a>
+                <a href="#" class="hover:text-primary transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
+                <a href="#" class="hover:text-primary transition-colors"><span class="material-symbols-outlined">smart_display</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
+        <p class="text-[10px] uppercase tracking-widest font-bold">© 2026 Patrioții România MMC. Unitas et Honor.</p>
+        <div class="flex gap-1 h-3 w-12">
+            <div class="flex-1 bg-[#002B7F]"></div><div class="flex-1 bg-[#FCD116]"></div><div class="flex-1 bg-[#CE1126]"></div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
